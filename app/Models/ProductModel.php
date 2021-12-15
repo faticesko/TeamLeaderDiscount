@@ -4,14 +4,6 @@ namespace App\Models;
 
 class ProductModel
 {
-//    public function __construct(
-//        private $productId,
-//        private $categoryId,
-//        private $itemPrice,
-//        private $quantity,
-//        private $total,
-//    ) {
-//    }
 
     public function getProducts(){
         return json_decode(file_get_contents( ROOT_DIR .'/var/products.json'), true);
